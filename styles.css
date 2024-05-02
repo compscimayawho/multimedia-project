@@ -24,6 +24,7 @@ body {
     font-style: normal;
     font-size: 16px;
     background-color: var(--background-color);
+    padding-top: 80px;
 }
 
 .navbar {
@@ -48,4 +49,27 @@ body {
     font-weight: 500;
     color: var(--school-color-darker);
     border-bottom: 5px solid var(--school-color-darker)
+}
+
+.hero-text h1 {
+    font-weight: 800;
+    color: var(--dark-gray);
+}
+
+.hero-text p {
+    font-weight: 500;
+    color: var(--light-gray);
+}
+
+.hero-text a {
+    padding: 1rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--school-color-darker);
+    transition: background-color 200ms ease-in-out;
+}
+
+.hero-text a:hover {
+    background-color: #0d1d5fce;
 }
