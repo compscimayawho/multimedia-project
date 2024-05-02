@@ -1,0 +1,51 @@
+:root {
+    --light-gray: #6B6F82;
+    --dark-gray: #464855;
+    --school-color-dark: #001d89;
+    --school-color-darker: #0d1e5f;
+    --school-color-medium: #adceec;
+    --school-color-soft: #cfe2f33a;
+    --school-color-light: #6fa8dc;
+    --school-color-bright: #378cdb;
+    --school-color-white: #FFF;
+    --background-color: #F4F5FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-item {
+    border-bottom: 5px solid transparent;
+    transition: all 300ms ease-in-out;
+}
+
+.active,
+.nav-item:hover {
+    font-weight: 500;
+    color: var(--school-color-darker);
+    border-bottom: 5px solid var(--school-color-darker)
+}
