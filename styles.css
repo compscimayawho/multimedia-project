@@ -66,23 +66,70 @@ body {
     padding: 0.7rem;
     font-size: 0.8rem;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     background-color: var(--school-color-darker);
+    border: 1px solid var(--school-color-darker);
     transition: background-color 200ms ease-in-out;
 }
 
 .hero-text a:hover {
-    background-color: #0d1d5fce;
+    color: var(--school-color-darker);
+    background-color: transparent;
+    font-weight: 600;
+    border: 1px solid var(--school-color-darker);
 }
 
 .featured-events {
     background-color: white;
 }
 
+.background-image {
+    background-size: cover;
+}
+
+footer {
+    color: white;
+    background-color: var(--school-color-darker);
+}
+
+footer .background-image {
+    height: 75px;
+    background-image: url(./images/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer a {
+    color: white;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 0.7rem;
+}
+
+footer p a {
+    font-size: 0.7rem;
+}
+
+footer .icons i {
+    font-size: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
     .hero-text a {
         padding: 1rem;
         font-size: 1rem;
+    }
+
+    footer a {
+        font-size: 0.8rem;
+    }
+
+    footer .icons i {
+        font-size: 1.2rem;
     }
 }
