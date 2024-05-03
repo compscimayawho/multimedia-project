@@ -1,6 +1,7 @@
 :root {
     --light-gray: #6B6F82;
     --dark-gray: #464855;
+    --school-color-footer: #1E5C7D;
     --school-color-dark: #001d89;
     --school-color-darker: #0d1e5f;
     --school-color-medium: #adceec;
@@ -62,9 +63,10 @@ body {
 }
 
 .hero-text a {
-    padding: 1rem;
+    padding: 0.7rem;
+    font-size: 0.8rem;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     background-color: var(--school-color-darker);
     transition: background-color 200ms ease-in-out;
@@ -72,4 +74,15 @@ body {
 
 .hero-text a:hover {
     background-color: #0d1d5fce;
+}
+
+.featured-events {
+    background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-text a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
 }
