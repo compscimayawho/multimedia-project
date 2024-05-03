@@ -120,6 +120,11 @@ footer .icons i {
 }
 
 @media only screen and (min-width: 768px) {
+
+    .hero-section {
+        min-height: calc(100vh - 10rem);
+    }
+
     .hero-text a {
         padding: 1rem;
         font-size: 1rem;
