@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     background-color: var(--background-color);
     padding-top: 80px;
+    max-height: fit-content;
 }
 
 .navbar {
@@ -50,6 +51,10 @@ body {
     font-weight: 500;
     color: var(--school-color-darker);
     border-bottom: 5px solid var(--school-color-darker)
+}
+
+.hero-section {
+    min-height: calc(100vh - 10rem);
 }
 
 .hero-text h1 {
@@ -80,8 +85,14 @@ body {
     border: 1px solid var(--school-color-darker);
 }
 
-.featured-events {
+.recent-events {
     background-color: white;
+    min-height: 100vh;
+}
+
+.recent-events h2 {
+    font-weight: 800;
+    color: var(--dark-gray);
 }
 
 .background-image {
@@ -120,10 +131,6 @@ footer .icons i {
 }
 
 @media only screen and (min-width: 768px) {
-
-    .hero-section {
-        min-height: calc(100vh - 10rem);
-    }
 
     .hero-text a {
         padding: 1rem;
