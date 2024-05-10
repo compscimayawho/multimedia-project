@@ -1,6 +1,7 @@
 :root {
     --light-gray: #6B6F82;
     --dark-gray: #464855;
+    --pepper-white: #fbf8fc;
     --school-color-footer: #1E5C7D;
     --school-color-dark: #001d89;
     --school-color-darker: #0d1e5f;
@@ -33,6 +34,10 @@ body {
     background-color: white;
 }
 
+.navbar-brand img {
+    width: 55px;
+}
+
 .navbar-toggler {
     border: none;
 }
@@ -42,19 +47,20 @@ body {
 }
 
 .nav-item {
-    border-bottom: 5px solid transparent;
+    border-bottom: 4px solid transparent;
     transition: all 300ms ease-in-out;
+    font-weight: 500;
 }
 
 .active,
 .nav-item:hover {
     font-weight: 500;
     color: var(--school-color-darker);
-    border-bottom: 5px solid var(--school-color-darker)
+    border-bottom: 4px solid var(--school-color-darker)
 }
 
 .hero-section {
-    min-height: calc(100vh - 10rem);
+    min-height: calc(100vh - 5rem);
 }
 
 .hero-text h1 {
@@ -83,6 +89,22 @@ body {
     background-color: transparent;
     font-weight: 600;
     border: 1px solid var(--school-color-darker);
+}
+
+.pepper {
+    min-height: calc(100vh - 5rem);
+    background-color: var(--school-color-darker);
+}
+
+.pepper h2 {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.pepper img {
+    width: 100%;
+    filter: drop-shadow(-1px 0px 111px rgba(255, 255, 255, 0.5)) drop-shadow(-15px 0px 15px rgba(0, 29, 137, 0.8));
 }
 
 .recent-events {
@@ -132,10 +154,23 @@ footer .icons i {
 
 @media only screen and (min-width: 768px) {
 
+    .navbar-brand img {
+        width: 65px;
+    }
+
+    .hero-section {
+        min-height: calc(100vh - 10rem);
+    }
+
     .hero-text a {
         padding: 1rem;
         font-size: 1rem;
     }
+
+    .pepper h2 {
+        font-size: 3rem;
+    }
+
 
     footer a {
         font-size: 0.8rem;
