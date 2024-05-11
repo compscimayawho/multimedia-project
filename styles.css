@@ -63,8 +63,13 @@ body {
     min-height: calc(100vh - 5rem);
 }
 
+.hero-section img {
+    width: 100%;
+}
+
 .hero-text h1 {
     font-weight: 800;
+    font-size: 1.3rem;
     color: var(--dark-gray);
 }
 
@@ -72,6 +77,7 @@ body {
     font-weight: 500;
     color: var(--light-gray);
 }
+
 
 .hero-text a {
     padding: 0.7rem;
@@ -96,10 +102,15 @@ body {
     background-color: var(--school-color-darker);
 }
 
+.pepper .container .row {
+    height: 100%;
+}
+
 .pepper h2 {
     color: #FFF;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
 }
 
 .pepper img {
@@ -162,13 +173,17 @@ footer .icons i {
         min-height: calc(100vh - 10rem);
     }
 
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+
     .hero-text a {
         padding: 1rem;
         font-size: 1rem;
     }
 
     .pepper h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 
