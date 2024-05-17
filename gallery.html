@@ -23,16 +23,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css">
-
-
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between">
     <!-- Navigation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="PSUT logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.png" alt="PSUT logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -41,18 +39,18 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <img src="./images/logo-stretched.png" alt="PSUT logo" height="50">
+                    <img src="./assets/images/logo-stretched.png" alt="PSUT logo" height="50">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 px-3 gap-3 gap-lg-0">
-                        <li class="nav-item mx-1 text-center active">
-                            <a class="nav-link" aria-label="Go to the home page" href="#">Home</a>
+                        <li class="nav-item mx-1 text-center">
+                            <a class="nav-link" aria-label="Go to the home page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item mx-1 text-center">
                             <a class="nav-link" aria-label="Go to the events page" href="./events.html">Events</a>
                         </li>
-                        <li class="nav-item mx-1 text-center">
+                        <li class="nav-item mx-1 text-center active">
                             <a class="nav-link" aria-label="Go to PSUT's gallery" href="./gallery.html">Gallery</a>
                         </li>
                     </ul>
@@ -61,6 +59,41 @@
             </div>
         </div>
     </nav>
+
+    <div class="psut-gallery my-4 mx-1 m-lg-5">
+        <div class="container">
+            <div class="title mb-4 mb-lg-5">
+                <h1 class="hidden text-center fw-bold">Relive the Excitement</h1>
+                <h3 class="hidden text-center fw-bold">Event Highlights</h3>
+            </div>
+
+            <div class="image-container">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img1_24bit.png"
+                    alt="PSUT 24bit Image 1">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img4.jpeg" alt="Image 4">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img1_monochrome.png"
+                    alt="PSUT 1bit Image 1">
+                <video class="hidden video mb-3" controls>
+                    <source src="./assets/videos/rain.mp4">
+                </video>
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img5.jpeg" alt="Image 5">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img3.jpeg" alt="Image 3">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img2.jpeg" alt="Image 2">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img1_grayscale.jpg"
+                    alt="PSUT 8bit Image 1">
+                <video class="hidden video mb-3" controls>
+                    <source src="./assets/videos/band.mp4">
+                </video>
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img6.jpeg" alt="Image 6">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img7.jpeg" alt="Image 7">
+                <video class="hidden video mb-3" controls>
+                    <source src="./assets/videos/friendship_auditorium.mp4">
+                </video>
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img8.jpeg" alt="Image 8">
+                <img loading="lazy" class="hidden image mb-3" src="./assets/images/img9.jpeg" alt="Image 9">
+            </div>
+        </div>
+    </div>
 
 
     <footer>
@@ -74,12 +107,12 @@
             <div class="footer-bottom d-flex flex-column flex-lg-row gap-1 justify-content-between">
                 <p class="text-center text-lg-start">Copyright © 2024 Princess Sumaya University for Technology. All
                     Rights
-                    Reserved.Developed
+                    Reserved. Developed
                     by Royal
                     Scientific Society <a href="https://www.rss.jo/">RSS.jo</a>
                 </p>
                 <div class="icons d-flex justify-content-center gap-4 gap-lg-5">
-                    <a aria-label="PSUT's Facebook" href="https://www.facebook.com/PSUTOFFICIAL/">
+                    <a aria-label="PSUT' s Facebook" href="https://www.facebook.com/PSUTOFFICIAL/">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a aria-label="PSUT's Twitter" href="https://twitter.com/PSUTOFFICIAL">

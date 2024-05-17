@@ -32,7 +32,7 @@
     <nav class="navbar fixed-top navbar-expand-lg shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="PSUT logo">
+                <img src="./assets/images/logo.png" alt="PSUT logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <img src="./images/logo-stretched.png" alt="PSUT logo" height="50">
+                    <img src="./assets/images/logo.png" alt="PSUT logo" height="50">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -63,47 +63,51 @@
     </nav>
 
     <!-- Hero Section -->
-    <main class="hero-section my-4 mx-3 m-lg-5 d-flex align-items-center">
-        <div class="container">
+    <main class="hero-section my-4 mx-3 m-lg-5 d-flex align-items-center hidden">
+        <div class="container hidden">
             <div class="row">
                 <div class="col-12 col-lg-7 hero-text p-0 p-lg-5 text-center text-lg-start">
-                    <h1 class="fw-bold mb-3 mb-lg-4">Reserve Your Spot, Elevate Your Experience at PSUT!</h1>
-                    <p class="mb-4 mb-lg-5">Welcome to PSUT's Event Reservations Platform - Where
+                    <h1 class="fw-bold mb-3 mb-lg-4 hidden">Reserve Your Spot, Elevate Your Experience at PSUT!</h1>
+                    <p class="mb-4 mb-lg-5 hidden">Welcome to PSUT's Event Reservations Platform - Where
                         Innovation Meets Participation! Explore, Register, and Be a Part of the Unforgettable Moments.
                     </p>
-                    <a href="./events.html" aria-label="Go to the events page" class="rounded-pill">Explore events!</a>
+                    <a href="./events.html" aria-label="Go to the events page" class="rounded-pill hidden">Explore
+                        events!</a>
                 </div>
-                <div class="col-12 col-lg-5 p-1 hero-illustration order-first order-lg-last mb-4">
-                    <img class="object-fit-fill" src="./images/online-calendar.svg" alt="Online Calendar Illustration"
-                        width="100%">
+                <div class="hidden col-12 col-lg-5 p-1 hero-illustration order-first order-lg-last mb-4">
+                    <img class="object-fit-fill" src="./assets/images/online-calendar.svg"
+                        alt="Online Calendar Illustration" width="100%">
                 </div>
             </div>
         </div>
     </main>
 
 
-    <section class="pepper px-3 p-lg-5 pb-lg-0 d-flex">
-        <div class="container">
+    <section class="pepper px-3 p-lg-5 pb-lg-0 d-flex hidden">
+        <div class="container hidden">
             <div class="row">
-                <div class="col-12 p-0 col-lg-6 align-self-end order-last order-lg-first">
-                    <img src="./images/pepper.png" alt="PSUT'S Robot, Pepper.">
+                <div class="hidden col-12 p-0 col-lg-6 align-self-end order-last order-lg-first">
+                    <img src="./assets/images/pepper.png" alt="PSUT'S Robot, Pepper.">
                 </div>
-                <div class="col-12 col-lg-6 text-center mt-5">
-                    <h2>Meet Pepper: Your Campus Companion</h2>
-                    <div class="audio">
+                <div class="hidden col-12 col-lg-6 my-4 text-center d-flex flex-column justify-content-center gap-3  ">
+                    <h2 class="hidden">Meet Pepper: Your Campus Companion</h2>
+                    <div class="audio hidden">
+                        <audio controls>
+                            <source src="./assets/audio/audio_edited.mp3">
+                        </audio>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="recent-events d-flex align-items-center">
+    <section class="recent-events d-flex align-items-center hidden">
         <div class="container my-5 my-lg-3 px-4">
-            <div class="row justify-content-center align-items-center g-3">
-                <div class="col-12 align-self-start text-center fw-bold pb-5">
-                    <h2>Recent Events</h2>
+            <div class="row justify-content-center align-items-center gx-3 gy-4">
+                <div class="hidden col-12 align-self-start text-center fw-bold pb-5">
+                    <h2 class="hidden">Recent Events</h2>
                 </div>
-                <div class="col d-flex justify-content-center p-0">
+                <div class="hidden col d-flex justify-content-center p-0">
                     <div class="card " style="width: 16rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
@@ -114,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center p-0">
+                <div class="hidden col d-flex justify-content-center p-0">
                     <div class="card" style="width: 16rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
@@ -141,18 +145,18 @@
     </section>
 
 
-    <footer>
-        <div class="background-image"></div>
-        <div class="container-fluid d-flex flex-column gap-4 p-3">
+    <footer class="hidden">
+        <div class="hidden background-image"></div>
+        <div class="hidden container-fluid d-flex flex-column gap-4 p-3">
             <div class="footer-top d-flex gap-5 justify-content-center">
                 <a href="#" class="text-decoration-none">ABOUT US</a>
                 <a href="#" class="text-decoration-none">CONTACT</a>
                 <a href="#" class="text-decoration-none">PRIVACY POLICY</a>
             </div>
-            <div class="footer-bottom d-flex flex-column flex-lg-row gap-1 justify-content-between">
+            <div class="hidden footer-bottom d-flex flex-column flex-lg-row gap-1 justify-content-between">
                 <p class="text-center text-lg-start">Copyright © 2024 Princess Sumaya University for Technology. All
                     Rights
-                    Reserved.Developed
+                    Reserved. Developed
                     by Royal
                     Scientific Society <a href="https://www.rss.jo/">RSS.jo</a>
                 </p>

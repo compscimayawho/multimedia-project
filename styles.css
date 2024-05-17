@@ -27,7 +27,7 @@ body {
     font-size: 16px;
     background-color: var(--background-color);
     padding-top: 80px;
-    max-height: fit-content;
+    min-height: fit-content;
 }
 
 .navbar {
@@ -118,9 +118,12 @@ body {
     filter: drop-shadow(-1px 0px 111px rgba(255, 255, 255, 0.5)) drop-shadow(-15px 0px 15px rgba(0, 29, 137, 0.8));
 }
 
+.pepper audio {
+    width: 15rem;
+}
+
 .recent-events {
-    background-color: white;
-    min-height: 100vh;
+    min-height: calc(100vh - 10rem);
 }
 
 .recent-events h2 {
@@ -132,14 +135,32 @@ body {
     background-size: cover;
 }
 
-footer {
+.image-container {
+    columns: 3 15rem;
+    gap: 1rem;
+}
+
+.image,
+.video {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 10ms ease-in;
+}
+
+.image:hover,
+.video:hover {
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.678);
+}
+
+footer .container-fluid {
     color: white;
     background-color: var(--school-color-darker);
 }
 
 footer .background-image {
     height: 75px;
-    background-image: url(./images/background-image.jpg);
+    background-image: url(./assets/images/background-image-nobg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -186,6 +207,9 @@ footer .icons i {
         font-size: 2rem;
     }
 
+    .pepper audio {
+        width: 25rem;
+    }
 
     footer a {
         font-size: 0.8rem;
@@ -194,4 +218,14 @@ footer .icons i {
     footer .icons i {
         font-size: 1.2rem;
     }
+}
+
+/* scroll animation */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
 }
