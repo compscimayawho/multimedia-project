@@ -90,7 +90,9 @@ body {
     transition: background-color 200ms ease-in-out;
 }
 
-.hero-text a:hover {
+.hero-text a:hover,
+.hero-text a:focus,
+.hero-text a:active {
     color: var(--school-color-darker);
     background-color: transparent;
     font-weight: 600;
@@ -135,6 +137,70 @@ body {
     background-size: cover;
 }
 
+.card {
+    height: 100%;
+    border-radius: 1rem;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.card img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.219);
+}
+
+.card a {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--school-color-darker);
+    border: 1px solid var(--school-color-darker);
+    transition: background-color 200ms ease-in-out;
+}
+
+.card h5 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+}
+
+.card p {
+    font-weight: 500;
+    color: var(--light-gray);
+}
+
+.card a:hover {
+    color: var(--school-color-darker);
+    background-color: transparent;
+    font-weight: 600;
+    border: 1px solid var(--school-color-darker);
+}
+
+.card a.disabled {
+    background-color: #0d1d5fd0;
+    color: white;
+}
+
+.card-footer {
+    background-color: white;
+}
+
+.tag {
+    padding: 0.3rem 0.5rem;
+    font-size: smaller;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: var(--school-color-bright);
+    border: 1px solid var(--school-color-light);
+}
+
+
+
 .image-container {
     columns: 3 15rem;
     gap: 1rem;
@@ -173,10 +239,6 @@ footer a {
 }
 
 footer p {
-    font-size: 0.7rem;
-}
-
-footer p a {
     font-size: 0.7rem;
 }
 
