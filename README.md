@@ -2,4 +2,4 @@
 
 #### Links
 
-- Live Site URL: [PSUT Events](https://compscimayawho.github.io/multimedia-project/gallery.html)
+- Live Site URL: [PSUT Events](https://main--prismatic-croissant-5f0ab3.netlify.app/)
